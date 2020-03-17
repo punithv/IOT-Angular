@@ -1,0 +1,10 @@
+.disconnecteddevice-card{
+    width: 600px;
+    margin-left: 350px;
+    margin-top: 50px;
+    background-color:black;
+    color:orange;
+  }
+  .distext{
+    color:orange;
+  }

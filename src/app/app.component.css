@@ -1,0 +1,9 @@
+.navbar-custom{
+    background-color:black ;
+    width: 100%;
+    height:auto;
+}
+nav .navbar-nav li a{
+    color:grey;
+    margin-left: 50px;
+  }

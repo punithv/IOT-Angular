@@ -1,0 +1,98 @@
+
+    
+<div *ngIf="router.url==='/alldevices'">
+    <form class="form-inline" style="margin-left: 300pt;margin-top: 10px;">
+      <input type="search"  class="form-control" name="search" placeholder="Search All Devices" (keyup.enter)="searchdata($event)"  (search)="cleardata()">
+      <button type="button" class="btn btn-dark form-control" style="width: 150px;margin-left: 140pt;" (click)="export('all')"><i
+      class="fa fa-download" aria-hidden="true"></i> Export to Excel</button>
+    </form>  
+  <div>
+   <ag-grid-angular
+      style="width: 500px; height: 300px; margin-left: 300pt; margin-top:15pt;"
+      class="ag-theme-balham"
+      [rowData]="rowData"
+      [columnDefs]="columnDefs"
+      [pagination]="true" 
+      [paginationPageSize]="8"                 
+      rowSelection="multiple"
+      [rowMultiSelectWithClick]="true" 
+      [suppressRowClickSelection]="true"
+      [groupSelectsChildren]="true">
+    </ag-grid-angular>
+  </div>
+  </div>
+  
+  
+     
+  <div *ngIf="router.url==='/activateddevices'">
+    <form class="form-inline" style="margin-left: 300pt;margin-top: 10px;">
+      <input type="search"  class="form-control" name="search" placeholder="Search All Devices" (keyup.enter)="searchdata($event)"  (search)="cleardata()">
+     <button type="button" class="btn btn-dark form-control" style="margin-left:140pt;width: 150px;" (click)="export('active')"><i
+      class="fa fa-download" aria-hidden="true"></i> Export to Excel</button>
+    </form>
+  <div>    
+    <ag-grid-angular
+      style="width: 500px; height: 300px; margin-left: 300pt; margin-top:15pt;"
+      class="ag-theme-balham"
+      [rowData]="rowDataActive"
+      [columnDefs]="columnDefsa"
+      [pagination]="true" 
+      [paginationPageSize]="8"                 
+      rowSelection="multiple"
+      [rowMultiSelectWithClick]="true" 
+      [suppressRowClickSelection]="true"
+      [groupSelectsChildren]="true">
+   </ag-grid-angular>
+  </div>
+  </div>
+  
+  
+  
+      
+   
+  <div *ngIf="router.url==='/disconnecteddevice'">
+    <form class="form-inline" style="margin-left: 300pt;margin-top: 10px;">
+      <input type="search"  class="form-control" name="search" placeholder="Search All Devices" (keyup.enter)="searchdata($event)"  (search)="cleardata()">
+      <button type="button" class="btn btn-dark form-control" style="margin-left:140pt;width: 150px;" (click)="export('deactive')"><i
+      class="fa fa-download" aria-hidden="true"></i> Export to Excel</button>
+    </form>
+  <div>
+    <ag-grid-angular
+      style="width: 500px; height: 300px; margin-left: 300pt; margin-top:15pt;"
+      class="ag-theme-balham"
+      [rowData]="rowDataDeactive"
+      [columnDefs]="columnDefsd"
+      [pagination]="true" 
+      [paginationPageSize]="8"                 
+      rowSelection="multiple"
+      [rowMultiSelectWithClick]="true" 
+      [suppressRowClickSelection]="true"
+      [groupSelectsChildren]="true">
+   </ag-grid-angular>
+  </div>
+  </div>
+  
+  
+   
+  <div *ngIf="router.url==='/offlinedevices'">
+    <form class="form-inline" style="margin-left: 300pt;margin-top: 10px;">
+      <input type="search"  class="form-control" name="search" placeholder="Search All Devices" (keyup.enter)="searchdata($event)"  (search)="cleardata()">
+      <button type="button" class="btn btn-dark form-control" style="margin-left:140pt;width: 150px;" (click)="export('offline')"><i
+        class="fa fa-download" aria-hidden="true"></i> Export to Excel</button>
+        </form>
+  <div>
+    <ag-grid-angular
+      style="width: 500px; height: 300px; margin-left: 300pt; margin-top:15pt;"
+      class="ag-theme-balham"
+      [rowData]="rowDataOffline"
+      [columnDefs]="columnDefso"
+      [pagination]="true" 
+      [paginationPageSize]="8"                 
+      rowSelection="multiple"
+      [rowMultiSelectWithClick]="true" 
+      [suppressRowClickSelection]="true"
+      [groupSelectsChildren]="true">
+    </ag-grid-angular>
+  </div>
+  </div>
+  

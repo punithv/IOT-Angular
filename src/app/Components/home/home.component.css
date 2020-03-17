@@ -1,0 +1,52 @@
+.alldevice-card{
+    width:300px;
+    background-color:black;
+    color: white;
+  }
+  .alltext{
+    color: white;
+  }
+  .all{
+    margin-top: 50px;
+    margin-left:10px;
+   }
+  
+  .activateddevice-card{
+    width: 300px;
+    background-color:black;
+    color:green;
+  }
+  .activetext{
+    color:green;
+  }
+  .active{
+    margin-left:330px;
+    margin-top:-107px;
+  }
+
+  .disconnecteddevice-card{
+    width:300px;
+    background-color:black;
+    color:orange;
+  }
+  .distext{
+    color:orange;
+  }
+ .dis{
+    margin-left:650px;
+    margin-top:-107px; 
+ }
+
+
+ .offlinedevice-card{
+    width: 300px;
+    background-color:black;
+    color:red;
+  }
+  .offtext{
+    color:red;
+  }
+  .off{
+    margin-left: 970px;
+    margin-top: -107px; 
+  }

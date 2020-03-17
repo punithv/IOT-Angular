@@ -1,0 +1,52 @@
+
+<div style="width: 100%;height: auto">
+    <div class="all"> 
+        <mat-card class="alldevice-card" (click)="redirect('alldevices')">
+            <mat-card-header>
+              <mat-card-title><h1>All Devices</h1></mat-card-title>
+              <mat-card-subtitle class="alltext">Total Devices  {{total}}</mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+    </div>
+<div class="active">
+    <mat-card class="activateddevice-card"(click)="redirect('activateddevices')" >
+        <mat-card-header>
+            <mat-card-title><h1>Activate Devices</h1></mat-card-title>
+            <mat-card-subtitle class="activetext">No.of Avtivate Devices  {{online}}</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+</div>
+<div class="dis">
+    <mat-card class="disconnecteddevice-card" (click)="redirect('disconnecteddevice')">
+        <mat-card-header>
+          <mat-card-title><h1>Disconnected  Devices</h1></mat-card-title>
+          <mat-card-subtitle class="distext">No.of Disconected Devices  {{inactive}}</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+</div>
+<div class="off">
+    <mat-card class="offlinedevice-card" (click)="redirect('offlinedevices')">
+        <mat-card-header>
+          <mat-card-title><h1>Offline Devices</h1></mat-card-title>
+          <mat-card-subtitle class="offtext">No.of Offline Devices  {{offline}}</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+</div>
+</div>
+
+
+<div style="width:100%;height:350px;background-color:black;margin-top: 50px;">
+    <div>
+    <div style="width:500px;height:350px;">
+       <app-graph></app-graph>
+    </div>
+    <div style="width:600;height:350px;margin-left: 520px;margin-top: -350px;">
+        <app-linegraph></app-linegraph>
+    </div>
+    </div>
+</div>
+
+
+
+<!-- <div style="margin-top: 50px;background-color: black;height:350px;width:500px;margin-left: 10px;">
+    <app-gr -->
